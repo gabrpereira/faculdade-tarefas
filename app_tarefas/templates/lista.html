@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Meu Gerenciador de Tarefas</title>
+  </head>
+  <body>
+    <h1>Minhas Tarefas</h1>
+    <ul>
+      {% for item in tarefas %}
+      <li>
+        {{ item.titulo }} {% if item.concluida %}
+        <span style="color: green">(Concluída)</span>
+        {% else %}
+        <span style="color: red">(Pendente)</span>
+
+        <a href="/concluir/{{ item.id}}"> [Marcar como Feita]</a>
+        <a href="/deletar/{{ item.id }}/" style="color: red">[X Apagar]</a>
+        {% endif %}
+      </li>
+      {% endfor %}
+    </ul>
+
+    <form method="POST">
+      {% csrf_token %}
+
+      <input
+        type="text"
+        name="novo_titulo"
+        required
+        placeholder="Adicione sua tarefa aqui"
+      />
+      <button type="submit">Salvar</button>
+    </form>
+  </body>
+</html>
