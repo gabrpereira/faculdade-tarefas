@@ -6,7 +6,7 @@ O objetivo do projeto é permitir que os usuários organizem suas atividades aca
 
 ## Participantes:
 Arthur Gabriel Silva Pereira
-Samuel da Rocha Santana 
+<br>Samuel da Rocha Santana 
 
 ## Funcionalidades
 
