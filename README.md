@@ -4,6 +4,10 @@ Este é um projeto simples de gerenciamento de tarefas desenvolvido com **Django
 
 O objetivo do projeto é permitir que os usuários organizem suas atividades acadêmicas e pessoais de forma prática.
 
+## Participantes:
+Arthur Gabriel Silva Pereira
+Samuel da Rocha Santana 
+
 ## Funcionalidades
 
 - **Listagem de Tarefas**: Visualização de todas as tarefas cadastradas.
